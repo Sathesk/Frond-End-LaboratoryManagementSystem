@@ -1,0 +1,177 @@
+*,
+*::before,
+*::after{
+    box-sizing:border-box;
+}
+
+body{
+    background-color: white;
+    font-family:"ubuntu", sans-serif;
+}
+
+                /*header*/
+header{
+    height: 100px;
+    background-color: white;
+}
+nav .heading_header{
+    font-size: 20px;
+}
+.heading_header span{
+    color: gold;
+}
+            /*navigation-header*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+.heading_header h1{
+    font-size: 30px;
+}
+
+.menu_list ul{
+    list-style-type: none;
+}
+
+.menu_list li{
+    float: left;
+    margin:5px;
+}
+
+.menu_list li a{ 
+    text-align: center;
+    background-color:white; 
+    color:black;
+    text-decoration: none;
+    display: block;
+    padding: 8px 15px 8px 15px;
+    border-bottom: 1px solid black;
+    border-radius: 10px;
+}
+
+.menu_list li a:hover{
+    background-color:black;
+    color: white;
+}
+
+.menu_list li a:active{
+    background-color:black;
+    color: white;
+}
+		/*selector*/
+#main_one{
+    background-color: rgba(0, 0, 0, 0.768);
+    color: white;
+    height:600px;
+    position: relative;
+    outline:11px solid rgba(0, 0, 0, 0.768);
+}
+
+#main_page{
+   position: relative;
+   padding-top:100px;
+}
+
+#flex_one{
+    width:800px;
+    height:400px;
+    background-color: white;
+    color:black;
+    box-shadow:10px 10px 20px rgba(0,0,0,0.6);
+    border:1px hidden;
+    border-radius: 30px;
+    margin:auto;
+    overflow:hidden;
+}
+
+.flex_row{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.flex_row img{
+    width: 100%;
+    display: block;
+}
+.flex_col{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.flex_col:hover{
+    background: rgba(220,0,0,0.5)
+}
+
+.flex_col a{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    transition: 0.5s;
+}
+.flex_col:hover a{
+    bottom: 49%;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+        /*footer*/
+footer{
+    height:300px;
+    background-color:  rgba(28, 27, 27, 0.94);
+    color: white;
+    outline: 10px solid rgba(28, 27, 27, 0.94);
+}
+        
+.footer_flex{
+    display: flex;
+    justify-content: space-between;
+    font-family: "Adventor", sans-serif;
+    margin: 20px;
+}
+        
+footer .footer_feat ul{
+    list-style-type: none;
+}
+        
+footer .footer_feat ul li a{
+    text-decoration: none;
+    color:white;
+}
+        
+footer .footer_links ul{
+    list-style-type: none;
+}
+        
+footer .footer_links ul li a{
+    text-decoration: none;
+    color: white;
+}
+        
+footer hr{
+    width:90%;
+}
+        
+footer .footer_cryt{
+    text-align:center;
+    font-family: "Adventor", sans-serif;
+}

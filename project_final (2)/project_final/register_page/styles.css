@@ -1,0 +1,301 @@
+*,
+*::before,
+*::after{
+    box-sizing:border-box;
+}
+
+body{
+    background-color: white;
+    font-family:"ubuntu", sans-serif;
+}
+
+                /*header*/
+header{
+    height: 100px;
+    background-color: white;
+}
+nav .heading_header{
+    font-size: 20px;
+}
+.heading_header span{
+    color: gold;
+}
+            /*navigation-header*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+.heading_header h1{
+    font-size: 30px;
+}
+
+.menu_list ul{
+    list-style-type: none;
+}
+
+.menu_list li{
+    float: left;
+    margin:5px;
+}
+
+.menu_list li a{ 
+    text-align: center;
+    background-color:white; 
+    color:black;
+    text-decoration: none;
+    display: block;
+    padding: 8px 15px 8px 15px;
+    border-bottom: 1px solid black;
+    border-radius: 10px;
+}
+
+.menu_list li a:hover{
+    background-color:black;
+    color: white;
+}
+
+.menu_list li a:active{
+    background-color:black;
+    color: white;
+}
+
+        /*section mainone*/
+#main_one{
+    background-color: rgba(0, 0, 0, 0.768);
+    color: white;
+    height:600px;
+    position: relative;
+    outline:11px solid rgba(0, 0, 0, 0.768);
+}
+
+#login_flex{
+   position: relative;
+   padding-top:100px;
+}
+
+#login_one{
+    width:800px;
+    height:400px;
+    background-color: white;
+    color:black;
+    box-shadow:10px 10px 20px rgba(0,0,0,0.6);
+    border:1px hidden;
+    border-radius: 30px;
+    margin:auto;
+    overflow:hidden;
+}
+
+
+.login_flex{
+    display: flex;
+}
+.logo,.login_form{
+    height:300px;
+    width:400px;
+}
+.logo{
+    margin: 50px 20px 0px 20px;
+    border:1px hidden;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 217, 0, 0.721);
+}
+
+.login_img{
+    padding: 10px 20px 20px 40px;
+}
+
+.logo .login_dfn{
+    padding:20px;
+}
+.logo .login_dfn p{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+
+        /*login side*/
+.login_form{
+    position:relative;
+    border-left:1px solid black;
+    margin-top:50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_form .form_one{
+    width:100%;
+    padding:20px 60px;
+}
+
+.form_one h2{
+    font-size: 2em;
+    text-align: center;
+}
+
+.form_one h2 span{
+    color:gold;
+}
+.input_box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid black;
+    margin:30px 0;
+}
+
+.input_box label{
+    position:absolute;
+    top: 50%;
+    left:5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    font-weight: 500;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.input_box input:focus~label,
+.input_box input:valid~label {
+    top: -5px;
+}
+
+.input_box input{
+    width:100%;
+    height:100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+
+.input_box .icon{
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    line-height: 57px;
+}
+
+.remember_forgot{
+    font-size: 0.9em;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember_forgot label input{
+    accent-color: black;
+    margin-right: 3px;
+}
+
+.remember_forgot a{
+    color: black;
+    text-decoration: none;
+}
+
+.remember_forgot a:hover{
+    text-decoration: underline;
+}
+
+.btn{
+    width:100%;
+    height:45px;
+    background-color: black;
+    outline:none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: white;
+    font-weight: 500;
+}
+
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+
+.register_link{
+    font-size: 0.9em;
+    color:black;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+
+.register_link p a{
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register_link p a:hover{
+    text-decoration: underline;
+}
+
+.click_home a{
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.click_home{
+    float: right;
+    position: relative;
+    justify-content: center;
+    padding: 90px 60px 0 0;
+}
+
+.click_home a:hover{
+    text-decoration: underline;
+}
+
+        /*footer*/
+footer{
+    height:300px;
+    background-color:  rgba(28, 27, 27, 0.94);
+    color: white;
+    outline: 10px solid rgba(28, 27, 27, 0.94);
+}
+        
+.footer_flex{
+    display: flex;
+    justify-content: space-between;
+    font-family: "Adventor", sans-serif;
+    margin: 20px;
+}
+        
+footer .footer_feat ul{
+    list-style-type: none;
+}
+        
+footer .footer_feat ul li a{
+    text-decoration: none;
+    color:white;
+}
+        
+footer .footer_links ul{
+    list-style-type: none;
+}
+        
+footer .footer_links ul li a{
+    text-decoration: none;
+    color: white;
+}
+        
+footer hr{
+    width:90%;
+}
+        
+footer .footer_cryt{
+    text-align:center;
+    font-family: "Adventor", sans-serif;
+}
+        

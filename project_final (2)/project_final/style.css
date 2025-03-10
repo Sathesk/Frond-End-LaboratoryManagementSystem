@@ -1,0 +1,242 @@
+*,
+*::before,
+*::after{
+    box-sizing:border-box;
+}
+
+body{
+    background-color: white;
+    font-family:"ubuntu", sans-serif;
+}
+
+                /*header*/
+header{
+    height: 70px;
+    background-color: white;
+}
+nav .heading_header{
+    font-size: 20px;
+}
+.heading_header span{
+    color: gold;
+}
+            /*navigation-header*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+.heading_header h1{
+    font-size: 30px;
+}
+
+.menu_list ul{
+    list-style-type: none;
+}
+
+.menu_list li{
+    float: left;
+    margin:5px;
+}
+
+.menu_list li a{ 
+    text-align: center;
+    background-color:white; 
+    color:black;
+    text-decoration: none;
+    display: block;
+    padding: 8px 15px 8px 15px;
+    border-bottom: 1px solid black;
+    border-radius: 10px;
+}
+
+.menu_list li a:hover{
+    background-color:black;
+    color: white;
+}
+
+.menu_list li a:active{
+    background-color:black;
+    color: white;
+}
+
+            /*section 2*/
+#main_one{
+    height: 700px;
+    background-color: rgb(231, 228, 228);
+    position: relative;
+    outline-width:10px;
+    outline-style:solid;
+    outline-color:rgb(231, 228, 228);
+}
+
+.heading_one{
+    display:flex;
+    justify-content: space-between;
+    margin: 40px;
+    padding:30px,50px,10px,50px;
+    align-items: center;
+}
+
+.heading_one h2{
+    font-size: 80px;
+}
+
+.heading_one p{
+    font-weight: 600;
+}
+.heading_one h2 .letter{
+    color:gold;
+}
+
+.heading_one h2 .heading_size{
+    font-size: 60px;
+}
+
+.heading_one .register a{
+    text-decoration: none;
+    display: inline-block;
+    margin:5px;
+    padding:10px 20px 10px 20px;
+    background-color: black;
+    border:1px solid black;
+    border-radius: 500px;
+    color:white;
+    text-align: center;
+}
+
+.heading_one .register a:hover{
+    background-color: white;
+    color: black;
+}
+
+    /*gallery*/
+.gallery{
+    padding: 0px 30px 0px 250px;
+}
+
+.container{
+    position:relative;
+    margin: 100px 0px 0px 0px;
+}
+
+.container .wrapper{
+    width:500px;
+    height:500px;
+    box-shadow:10px 10px 20px rgba(0,0,0,0.6);
+    border:1px hidden;
+    border-radius: 50px;
+    overflow:hidden;
+}
+
+.container .wrapper_holder{
+    display:grid;
+    grid-template-columns:repeat(4, 100%);
+    height:100%;
+    width:100%;
+    animation:slider 30s ease-in-out infinite alternate;
+}
+
+.container #slider_img_1{
+    background-image:url("logojfn.jpg");
+    background-position:center;
+    background-size:cover;
+}
+
+.container #slider_img_2{
+    background-image:url("chemdep.jpg");
+    background-position:center;
+    background-size:cover;
+}
+
+.container #slider_img_3{
+    background-image:url("chemlog.jpeg");
+    background-position:center;
+    background-size:cover;
+}
+
+.container #slider_img_4{
+    background-image:url("chemdep2.jpeg");
+    background-position:center;
+    background-size:cover;
+}
+
+.container .button_holder .button{
+    background-color:gold;
+    width:15px;
+    height:15px;
+    border-radius:15px;
+    display:inline-block;
+    margin:3px;
+}
+
+.container .button_holder{
+    position:absolute;
+    left:40%;
+    bottom:0%;
+}
+
+.button:hover{
+    box-shadow:0px 0px 7px 4px white;
+}
+
+@keyframes slider{
+    0%{transform: translateX(0%);}
+    10%{transform: translateX(-100%);}
+    20%{transform: translateX(-100%);}
+    30%{transform: translateX(-200%);}
+    40%{transform: translateX(-200%);}
+    50%{transform: translateX(-200%);}
+    60%{transform: translateX(-300%);}
+    70%{transform: translateX(-300%);}
+    80%{transform: translateX(-300%);}
+    90%{transform: translateX(0%);}
+    100%{transform: translateX(0%);}
+}
+
+footer{
+    height:300px;
+    background-color:  rgba(28, 27, 27, 0.94);
+    color: white;
+    outline: 10px solid  rgba(28, 27, 27, 0.94);
+
+}
+
+.footer_flex{
+    display: flex;
+    justify-content: space-between;
+    font-family: "Adventor", sans-serif;
+    margin: 20px;
+}
+
+footer .footer_feat ul{
+    list-style-type: none;
+}
+
+footer .footer_feat ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+footer .footer_links ul{
+    list-style-type: none;
+}
+
+footer .footer_links ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+footer hr{
+    width:90%;
+}
+
+footer .footer_cryt{
+    text-align:center;
+    font-family: "Adventor", sans-serif;
+}
+
+
+
+

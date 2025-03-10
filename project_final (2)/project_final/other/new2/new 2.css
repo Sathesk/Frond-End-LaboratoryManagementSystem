@@ -1,0 +1,150 @@
+*,
+*::before,
+*::after{
+    box-sizing:border-box;
+	font-family:
+}
+
+body{
+	font-family:"ubuntu", sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 600px;
+	background-color: black;
+}
+
+.containers{
+	position: relative;
+	display:flex;
+	justify-content:space-around;
+	background-color: gray;
+	align-items: center;
+	flex-wrap:wrap;	
+	padding: 50px;
+	border-radius:20px;
+	overflow:hidden;
+}
+
+.container {
+	position: relative;
+  	display:fixed;
+	height:200px;
+	width: 400px;
+	padding: 50px 100px 50px 100px;
+	border: black solid 5px;
+	justify-content: center;
+	
+}
+#btn1{
+	background-image: url('01.png');
+}
+#btn2{
+	background-image: url('01.jpg');
+}
+#btn3{
+	background-image: url('01.png');
+}
+#btn4{
+	background-image: url('01.png');
+}
+/* .container img{
+	/* height:200px;
+	width: 400px; 
+	opacity:0.3;
+	display:block;
+} */
+button {
+	background-color:white;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height:100%;
+	width: 100%;
+	position:absolute;
+	text-align:center;
+	top:0;
+	left:0;
+
+}
+
+.button h3{
+	width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    transition: 0.5s;
+}
+.button:hover h3{
+	font-size: 35px;
+	bottom:49%;
+	opacity:5;
+}
+button:hover{
+	background: linear-grant(rgba(50,48,49,0.5));
+}
+
+/* .bottomright {
+  position: absolute;
+  bottom: 8px;
+  right:8px;
+  left:8px;
+  font-size: 18px;
+}
+
+img { 
+  width: 100%;
+  height: auto;
+  opacity: 0.3;
+} 
+.container{
+	background-color:white;
+	background-image: url('01.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	justify-items: center;
+	display:fixed;
+	height:300px;
+	width: 500px;
+	padding: 75px 125px 75px 125px;
+	justify-content: center;
+	
+} */
+
+
+
+
+/* button:hover{
+	border: black solid 5px;
+} */
+
+
+
+/* .a{
+	color:white;
+	text-decoration: none;
+}
+
+.card{
+	background-color:white;
+	background-image: url('01.png');
+	justify-items: stretch;
+	border: black soild 5px;
+	height:250px;
+	width: 300px;
+	padding: 120px 70px 0px 70px;
+	text-align: center;
+	display: inline-block;
+	font-size: 20px;
+    transition: 0.5s;
+}
+
+.card:hover{
+	background: linear-grant(rgba(50,48,49,0.2));
+	filter: blur(8px);
+} */
+
+
